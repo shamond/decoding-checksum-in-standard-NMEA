@@ -113,7 +113,7 @@ class Ui_MainWindow(object):
                 return True
             return False
 
-        # print(int(hex(d),16), checksum)
+
 
     def insert(self):
         text = self.alert_rmc.text().split(",")
