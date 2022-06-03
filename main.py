@@ -123,12 +123,8 @@ class Ui_MainWindow(object):
             for i in range(len(text)):
                 if text[i] == "N" or text[i] == "S":
                     self.longitude.setText(text[i - 1] + text[i])
-                else:
-                    self.longitude.setText("dont enough information")
                 if text[i] == "W" or text[i] == "E":
                     self.latitude.setText(text[i - 1] + text[i])
-                else:
-                    self.latitude.setText("dont enough information")
                     if "." in text[i + 1]:
                         self.equal.setText(text[i + 1])
                     else:
